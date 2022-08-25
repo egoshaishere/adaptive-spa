@@ -31,12 +31,12 @@ export default {
             }
         })
     },
-    methods: {
-        fillArr(){
+    // methods: {
+    //     fillArr(){
 
-            this.testArray.push()
-        }
-    }
+    //         this.testArray.push()
+    //     }
+    // }
 
 }
 </script>

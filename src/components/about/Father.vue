@@ -1,7 +1,7 @@
 <template>
 <div>
     Father
-    <Son />
+    <Son v-on:welcome = "welcomeIntercenter" />
 </div>
   
 </template>
@@ -12,6 +12,11 @@ export default {
     name: "Father",
     components: {
         Son
+    },
+    methods: {
+        welcomeIntercenter(test) {
+            console.log('welcome is captured', test)
+        }
     },
     props: ['fatherProp', "fatherFilteredArray"],
     mounted() {

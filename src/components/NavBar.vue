@@ -1,20 +1,8 @@
 <template>
-  <!-- <v-flex class="mt-5">
-    <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
-      <v-list-item-action>
-        <v-icon class="white--text">{{ link.icon }}</v-icon>
-      </v-list-item-action>
-      <v-list-item-content>
-        <v-list-item-title class="white--text">
-          {{ link.text }}
-        </v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-  </v-flex> -->
   <div>
     <v-row class="ma-16">
       <v-btn
-        calss="pl-10 link-btn"
+        calss="ma-15"
         size="20"
         icon
         v-for="link in links"
@@ -37,6 +25,7 @@ export default {
     return {
       links: [
         { icon: "mdi-dashboard", text: "Main", route: "/" },
+        { icon: "mdi-emoji_symbols", text: "Secondary", route: "/secondary" },
         { icon: "mdi-emoji_symbols", text: "About", route: "/about" },
       ],
     };
@@ -47,5 +36,6 @@ export default {
 <style>
 .link-btn {
     width: 100px;
+    margin: 200px;
 }
 </style>
