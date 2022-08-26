@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SecondaryView  from '../views/SecondaryView.vue'
+import TertiaryView  from '../views/TertiaryView.vue'
+import FourthView from '../views/FourthView.vue'
+import FifthView from '../views/FifthView.vue'
 
 Vue.use(VueRouter)
 
@@ -11,10 +14,25 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-    {
+  {
     path: '/secondary',
     name: 'secondary',
     component: SecondaryView
+  },
+  {
+    path: '/tertiary',
+    name: 'tertiary',
+    component: TertiaryView
+  },
+  {
+    path: '/fourth',
+    name: 'fourth',
+    component: FourthView
+  },
+    {
+    path: '/fifth',
+    name: 'fifth',
+    component: FifthView
   },
   {
     path: '/about',

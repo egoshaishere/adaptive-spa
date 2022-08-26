@@ -6,11 +6,11 @@
         size="20"
         icon
         v-for="link in links"
-        :key="link.text"
+        :key="link.id"
         router
         :to="link.route"
       >
-        <v-icon size="10">{{link.text}}</v-icon>
+        <v-icon :key="link.id + '_icon'" size="10">{{link.text}}</v-icon>
       </v-btn>
     </v-row>
 
@@ -24,9 +24,12 @@ export default {
   data() {
     return {
       links: [
-        { icon: "mdi-dashboard", text: "Main", route: "/" },
-        { icon: "mdi-emoji_symbols", text: "Secondary", route: "/secondary" },
-        { icon: "mdi-emoji_symbols", text: "About", route: "/about" },
+        { icon: "mdi-dashboard", text: "Main", route: "/", id: 1 },
+        { icon: "mdi-emoji_symbols", text: "Secondary", route: "/secondary", id: 2 },
+        { icon: "mdi-emoji_symbols", text: "Tertiary", route: "/tertiary", id: 3 },
+        { icon: "mdi-emoji_symbols", text: "Fourth", route: "/fourth", id: 4 },
+        { icon: "mdi-emoji_symbols", text: "About", route: "/about", id: 5 },
+        { icon: "mdi-emoji_symbols", text: "Fifth", route: "/fifth", id: 6 },
       ],
     };
   },

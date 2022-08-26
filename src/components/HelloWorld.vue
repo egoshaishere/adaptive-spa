@@ -1,5 +1,7 @@
 <template>
   <v-container>
+    <div>https://v2.vuejs.org/v2/guide/installation.html</div>
+    <div>https://v2.vuejs.org/v2/api/#Global-Config</div>
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
