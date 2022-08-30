@@ -5,6 +5,7 @@ import SecondaryView  from '../views/SecondaryView.vue'
 import TertiaryView  from '../views/TertiaryView.vue'
 import FourthView from '../views/FourthView.vue'
 import FifthView from '../views/FifthView.vue'
+import SixthView from '../views/SixthView.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/fifth',
     name: 'fifth',
     component: FifthView
+  },
+  {
+    path: '/sixth',
+    name: 'sixth',
+    component: SixthView
   },
   {
     path: '/about',

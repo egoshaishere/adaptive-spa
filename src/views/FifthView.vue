@@ -20,9 +20,7 @@
       <div>{{ firstName }}</div>
       <div>{{ lastName }}</div>
       <div>{{ fullName }}</div>
-
       <div>{{ fullNameComputed }}</div>
-
       <v-btn v-on:click="click2">change data</v-btn>
       <v-btn v-on:click="click3">change computed</v-btn>
     </div>
@@ -43,6 +41,11 @@
 
 export default {
   name: "Fourth",
+
+
+
+
+
   data() {
     return {
       message: "My sweet message azazazazaz12323541!1",
@@ -56,6 +59,8 @@ export default {
       answer: "I cannot give you an answer until you ask a question!",
     };
   },
+
+
   computed: {
     // a computed getter
     reversedMessage: function () {
@@ -78,6 +83,8 @@ export default {
       },
     },
   },
+
+
   methods: {
     click() {
       this.message = "brrrrr";
@@ -92,7 +99,6 @@ export default {
     reverseMessage: function () {
       return this.message.split("").reverse().join("");
     },
-
     getAnswer: function () {
       if (this.question.indexOf('?') === -1) {
         this.answer = 'Questions usually contain a question mark. ;-)'
@@ -109,6 +115,8 @@ export default {
         })
     }
   },
+
+
   watch: {
     firstName: function (val) {
       this.fullName = val + " " + this.lastName;
@@ -123,6 +131,11 @@ export default {
       this.debouncedGetAnswer();
     },
   },
+
+
+
+
+  
   created: function () {
     // _.debounce is a function provided by lodash to limit how
     // often a particularly expensive operation can be run.

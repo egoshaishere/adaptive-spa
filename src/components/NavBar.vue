@@ -30,6 +30,7 @@ export default {
         { icon: "mdi-emoji_symbols", text: "Fourth", route: "/fourth", id: 4 },
         { icon: "mdi-emoji_symbols", text: "About", route: "/about", id: 5 },
         { icon: "mdi-emoji_symbols", text: "Fifth", route: "/fifth", id: 6 },
+        { icon: "mdi-emoji_symbols", text: "Sixth", route: "/sixth", id: 7 },
       ],
     };
   },
