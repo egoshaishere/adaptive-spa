@@ -2,6 +2,12 @@
   <v-container>
     <div>https://v2.vuejs.org/v2/guide/installation.html</div>
     <div>https://v2.vuejs.org/v2/api/#Global-Config</div>
+
+    <div>vue 2 вламывается в объекты устанавливает в них геттеры и сеттеры</div>
+    <div>vue 3 оборачивает их в прокси</div>
+
+    <div>vue 2 не умеет отслеживать изменения в массиве</div>
+
     <v-row class="text-center">
       <v-col cols="12">
         <v-img

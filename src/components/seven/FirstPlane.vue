@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>First Plane</div>
-        <SecondPlane :prop2lvl.sync="firstPlane" />
+        <SecondPlane :prop2lvl="firstPlane" />
     </div>
 </template>
 
